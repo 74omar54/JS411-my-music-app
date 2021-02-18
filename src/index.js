@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import NavBar from './components/NavBar'
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Router from './components/Router'
+
+const Main = () => (
+  <BrowserRouter>
+    <NavBar />
+    <Router />
+  </BrowserRouter>
+)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );

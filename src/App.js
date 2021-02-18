@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import NavBar from './components/NavBar'
+// import NavBar from './components/NavBar'
 import LogIn from './components/Login'
 import DashBoard from './components/DashBoard';
-
-
-
-
 
 
  function App () {
@@ -13,13 +9,9 @@ import DashBoard from './components/DashBoard';
    const [isOnline, setIsOnline] = useState(true)
    
 
-  
-
-  
   if (isLoggedIn) {
     return (
       <div className='App'>
-        <NavBar />
         <DashBoard switchButton={setIsOnline} state={isOnline} />
       </div>
 
@@ -27,7 +19,7 @@ import DashBoard from './components/DashBoard';
   } else {
     return (
       <div className="App">
-        <NavBar/>
+        {/* <NavBar/> */}
         <br/>
         <LogIn loginButton={setIsLoggedIn} />
       </div>
