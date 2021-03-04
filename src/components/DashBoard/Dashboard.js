@@ -15,7 +15,6 @@ import SwitchIt from '../Select';
 const DashBoard = (props) => {
     const [volumeCheck, setVolume] = useState(20);
     const [qualityCheck, setQuality] = useState(3);
-
     const switchButton = () => {
         return props.switchButton(!props.state)
     }
@@ -74,7 +73,6 @@ const DashBoard = (props) => {
             ): (
                 <p></p>
             )}
-
         </div>
     )
     
